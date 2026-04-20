@@ -49,7 +49,6 @@ This formulation follows standard LCA theory as taught in:
 ---
 
 ## 1. Purpose of the script
-
 The script is designed to:
 - read a SimaPro-exported matrix from Excel  
 - normalize raw exchanges by the reference output  
@@ -68,11 +67,12 @@ Data/
 │   └── your_matrix_file.xlsx
 ├── Method_CSV/
 │   └── your_method_file.csv
-└── Results
+└── Results/
+```
 
+---
 
 ## 3. Core calculation (summary)
-
 The script performs the following steps:
 
 1. **Normalization**  
@@ -94,18 +94,17 @@ This allows computing the LCA results for **all processes simultaneously**, with
 3. **Inventory calculation**
 ```text
 E = S · X
-
+```
 → full life cycle inventory per process  
 
 4. **Impact assessment**
 ```text
 D = C · E
-
+```
 → impact scores per process and category
 
 
 ## 4. Output
-
 Main output: Results/Impact_Assessment.csv
 - rows = processes  
 - columns = impact categories  
@@ -115,7 +114,6 @@ Each value represents the impact of **1 unit of that process**.
 ---
 
 ## 5. Key notes
-
 - `q` is only used to normalize SimaPro exports (not part of standard LCA theory)  
 - `Y = I` means the script computes **one LCA per process simultaneously**  
 - results correspond to **total impacts per process**, not contribution analysis  
@@ -123,10 +121,9 @@ Each value represents the impact of **1 unit of that process**.
 ---
 
 ## 6. Requirements
-
 ```bash
 pip install pandas numpy scipy openpyxl
-
+```
 
 ## 7. Usage
 	1.	Export matrix and LCIA method from SimaPro
