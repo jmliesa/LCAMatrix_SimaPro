@@ -1,7 +1,7 @@
 
 # LCA matrix calculation from SimaPro export: LCAMatrix_SimaPro
 This script computes Life Cycle Assessment (LCA) results from a SimaPro raw matrix export using a fully matrix-based approach in Python.
-Originally developed as an R script by Xun Liao (former PhD candidate at EPFL, Switzerland), it has been adapted and extended in Python by @CedricFurrer and @jmliesa.
+Originally developed as an R script by Xun Liao (former PhD candidate at EPFL, Switzerland), it has been adapted and extended in Python by @CedricFurrer and @jmliesa from the LCA group at @Agroscope, the Swiss centre of excellence for agricultural research (Zürich).
 
 ## Motivation
 This implementation serves several purposes:
