@@ -124,13 +124,17 @@ Each value represents the impact of **1 unit of that process**.
 ```bash
 pip install pandas numpy scipy openpyxl
 ```
+---
 
 ## 7. Usage
-	1.	Export matrix and LCIA method from SimaPro
-	2.	Place files in the corresponding folders
-	3.	Set working_dir in the script
-	4.	Run the script
-	5.	Check results in /Results
+
+1. Export the matrix and LCIA method from SimaPro  
+2. Place the files in the corresponding folders  
+3. Set the `working_dir` in the script  
+4. Run the script  
+5. Check results in the `/Results` folder 
+
+---
 
 ## 8. Matrix dimensions (quick reference)
 
