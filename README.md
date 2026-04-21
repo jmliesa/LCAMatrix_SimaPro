@@ -38,8 +38,7 @@ The implementation computes results for all processes simultaneously by using an
 This formulation follows standard LCA theory as taught in:
 
 - To better follow this code, we provide a summary on how LCA calculations work, based on the lectures from the
-- Life Cycle Assessment course from NTNU and the book 'Methodological Essentials of Life Cycle Assessment' by
-- Anders H. Strømman.
+- Life Cycle Assessment course from NTNU and the book 'Methodological Essentials of Life Cycle Assessment' by Anders H. Strømman.
 
 ---
 
