@@ -4,7 +4,7 @@ This script computes Life Cycle Assessment (LCA) results from a SimaPro raw matr
 Originally developed as an R script by Xun Liao (former PhD candidate at EPFL, Switzerland), it has been adapted and extended in Python by @CedricFurrer and @jmliesa from the LCA group at @Agroscope, the Swiss centre of excellence for agricultural research (Zürich).
 
 ## Motivation
-This implementation serves several purposes:
+This implementation serves several purposes, including, for instance:
 
 1. **Teaching**  
    Helps students understand the underlying logic of LCA calculations (matrix formulation, Leontief system, inventory and impact assessment).
@@ -13,7 +13,7 @@ This implementation serves several purposes:
    Provides an independent way to reproduce and double-check results from LCA software such as SimaPro or Brightway.
 
 3. **Scalability**  
-   Enables efficient computation of LCA results for large databases, allowing simultaneous evaluation of all processes.
+   Enables computation of LCA results for large databases, allowing simultaneous evaluation of all processes.
 
 ## Scope and applicability
 - Works with any database exported from **SimaPro** (PhD or Developer license required for matrix export)
