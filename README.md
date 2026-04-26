@@ -95,7 +95,11 @@ E = S · X
 D = C · E
 ```
 → impact scores per process and category
+The output matrix is equivalent to computing, per process:
 
+```text
+d = C S (I - A)⁻¹ y
+```
 
 ## 4. Output
 Main output: Results/Impact_Assessment.csv
@@ -106,30 +110,7 @@ Each value represents the impact of **1 unit of that process**.
 
 ---
 
-## 5. Key notes
-- `q` is only used to normalize SimaPro exports (not part of standard LCA theory)  
-- `Y = I` means the script computes **one LCA per process simultaneously**  
-- results correspond to **total impacts per process**, not contribution analysis  
-
----
-
-## 6. Requirements
-```bash
-pip install pandas numpy scipy openpyxl
-```
----
-
-## 7. Usage
-
-1. Export the matrix and LCIA method from SimaPro  
-2. Place the files in the corresponding folders  
-3. Set the `working_dir` in the script  
-4. Run the script  
-5. Check results in the `/Results` folder 
-
----
-
-## 8. Matrix dimensions (quick reference)
+## 5. Matrix dimensions (quick reference)
 
 | Matrix | Shape | Meaning |
 |--------|------|--------|
@@ -142,8 +123,25 @@ pip install pandas numpy scipy openpyxl
 
 ---
 
-## 9. Interpretation
-The output matrix is equivalent to computing:
+## 6. Key notes
+- `q` is only used to normalize SimaPro exports (not part of standard LCA theory)  
+- `Y = I` means the script computes **one LCA per process simultaneously**  
+- results correspond to **total impacts per process**, not contribution analysis  
 
-```text
-d = C S (I - A)⁻¹ y
+---
+
+## 7. Requirements
+```bash
+pip install pandas numpy scipy openpyxl
+```
+
+---
+
+## 8. Usage
+
+1. Export the matrix and LCIA method from SimaPro  
+2. Place the files in the corresponding folders  
+3. Set the `working_dir` in the script  
+4. Run the script  
+5. Check results in the `/Results` folder 
+
