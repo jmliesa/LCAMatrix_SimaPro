@@ -30,7 +30,7 @@ The script follows the standard matrix-based LCA formulation:
 
 where:
 - \A\: requirement (technosphere) matrix  
-- \S): stressor (biosphere) matrix  
+- \(S)\: stressor (biosphere) matrix  
 - \C\: characterization matrix  
 - \y\: functional unit (demand vector)  
 
