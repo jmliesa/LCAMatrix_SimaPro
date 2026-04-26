@@ -24,15 +24,15 @@ This implementation serves several purposes, including, for instance:
 
 ## Methodological background
 The script follows the standard matrix-based LCA formulation:
-- \(x = (I - A)^{-1} y\) → total production (supply chain)  
-- \(e = Sx\) → life cycle inventory  
-- \(d = Ce\) → impact assessment  
+- \x = (I - A)^{-1} y\ → total production (supply chain)  
+- \e = Sx\ → life cycle inventory  
+- \d = Ce\ → impact assessment  
 
 where:
-- \(A\): requirement (technosphere) matrix  
-- \(S\): stressor (biosphere) matrix  
-- \(C\): characterization matrix  
-- \(y\): functional unit (demand vector)  
+- \A\: requirement (technosphere) matrix  
+- \S): stressor (biosphere) matrix  
+- \C\: characterization matrix  
+- \y\: functional unit (demand vector)  
 
 The implementation computes results for all processes simultaneously by using an identity demand matrix.
 This formulation follows standard LCA theory as taught in:
